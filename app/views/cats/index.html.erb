@@ -1,0 +1,16 @@
+<link  href="styles/main.css"   rel="stylesheet" type="text/css" />
+
+
+
+<h1>Cats total number: <%= @cats_in_html %> </h1>
+
+<div>
+  <%= while (@cats_in_html != 0) do %>
+      <img src='http://38.media.tumblr.com/da700c014c1d931d1b050e48ed38b004/tumblr_n7v69seOlW1t3cm6fo1_400.gif'/>
+      <h1>cat number: <%= @cats_in_html %></h1>
+  <% @cats_in_html = @cats_in_html - 1
+     end %>
+
+</div>
+
+<h1>  <%= @warning %> </h1>

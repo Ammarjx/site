@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Site</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+<link  href="styles/main.css"   rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+
+
+
+
+<header>
+     <nav>
+         <h1>My webpage</h1>
+         <ul>
+
+              <li><a href="/about"> about</a></li>
+              <li><a href="/home"> home</a></li>
+              <li><a href="/contact">contact</a></li>
+              <li><a href="/cats">cats</a></li>
+              <br>
+
+
+
+<form class="in">
+              <formaction='mailto:devearnapp@gmail.com'method='post'>
+              Email:<input type='text' name='Email'><br>
+              <div class="p">  
+              Password:<input type='password' name='password'>
+              <input type='Submit' value='Submit'
+              </div>
+
+</form>
+         </ul>
+     </nav>
+ </header>
+
+
+<%= yield %>
+
+<br>
+<br>
+
+<footer>2016 My Site</footer>
+
+
+
+
+</body>
+</html>
